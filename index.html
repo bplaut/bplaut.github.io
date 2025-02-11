@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<!--
+    Read Only by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Benjamin Plaut</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/main.css" />
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+      body {
+        font-family: "Merriweather", serif;
+        color: #444;
+      }
+      a {
+        color: #1E81B0;
+      }
+
+      #nav ul li a {
+      font-size: var(--base-font-size);
+      padding: 2px 4px;
+      }
+
+
+      #logo {
+        font-size: 1.8em;
+      }
+
+      #header > header {
+      padding: 2em 2em 1em 2em;
+      }
+
+      #header .image.avatar {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 1.6em;
+      }
+      #header .image.avatar img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      #main .container p,
+      #main .container li {
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
+      }
+      #main .container h2 {
+        font-size: 1.6em;
+      }
+      #main .container h3 {
+        font-size: 1.2em;
+        margin-top: 1em;
+      }
+
+      .experience-item {
+        margin-bottom: 8px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #ccc;
+      }
+      .experience-item:last-child {
+        border-bottom: none;
+      }
+      .experience-item .job-title {
+        display: block;
+        font-weight: bold;
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
+        margin-bottom: 2px;
+      }
+      .experience-item .organization {
+        display: block;
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
+        margin-bottom: 2px;
+      }
+      .experience-item .timeframe {
+        display: block;
+        font-size: var(--base-font-size);
+        line-height: var(--base-line-height);
+        color: #555;
+        margin-bottom: 2px;
+      }
+
+      #other .image.main img {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+
+    <!-- Header -->
+    <section id="header">
+      <header>
+        <span class="image avatar"><img src="me.jpg" alt="Benjamin Plaut" /></span>
+        <h1 id="logo">Benjamin Plaut</h1>
+        <p>Postdoc at UC Berkeley</p>
+	<p style="margin-top:0;">AI Safety</p>
+	<p style="font-style:normal;font-size:var(--base-font-size);margin-top:0.5em;">
+        <a href="mailto:bjplaut@gmail.com">bjplaut@gmail.com</a> | <a href="CV.pdf" target="_blank">CV</a>
+</p>
+      </header>
+      <nav id="nav">
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#experience">Work experience</a></li>
+          <li><a href="#other">Other</a></li>
+        </ul>
+      </nav>
+      <footer>
+        <ul class="icons">
+          <li>
+            <a href="mailto:bjplaut@gmail.com" class="icon solid fa-envelope">
+              <span class="label">Email</span>
+            </a>
+          </li>
+          <li>
+            <a href="CV.pdf" class="icon solid fa-file">
+              <span class="label">CV</span>
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </section>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+      <div id="main">
+
+        <!-- Research Interests Section -->
+        <section id="about">
+          <div class="container">
+            <h2>About me</h2>
+            <p>
+              I am a postdoctoral research fellow at the 
+              <a href="https://humancompatible.ai/" target="_blank">Center for Human-Compatible AI</a> (CHAI) at <a href="https://www.berkeley.edu/" target="_blank">UC Berkeley</a>, where I study AI safety with a focus on generalization.
+              I am grateful to be mentored by <a href="http://people.eecs.berkeley.edu/~russell/" target="_blank">Stuart Russell</a>.
+              In 2021, I received my PhD from the 
+              <a href="http://www-cs.stanford.edu/" target="_blank">Computer Science Department</a> at 
+              <a href="https://www.stanford.edu/" target="_blank">Stanford University</a>, advised by 
+              <a href="http://web.stanford.edu/~ashishg/" target="_blank">Ashish Goel</a> and supported by an NSF Graduate Research Fellowship.
+              I also spent two years doing science and product work at Lyft.
+            </p>
+
+
+            <p>
+              I want to use my career to do good in the world. In general, I am interested in ensuring that technology is safe and beneficial.
+              During my PhD, I explored this question from an economic perspective: how to design markets and algorithms that achieve good outcomes even when people are selfish.
+              Over time, I became increasingly concerned at the rapid pace of AI development, causing me to pivot to the field of AI safety. I'm concerned about a wide range of risks from AI, including but not limited to LLM hallucination, medical errors, critical infrastructure failures, and societal-scale catastrophe.
+            </p>
+            <h3>Research interests</h3>
+            <p>
+              Within AI safety, I mostly study generalization: how a model handles unfamiliar inputs. I think that many types of safety failures can be framed as misgeneralization.
+              I'm especially interested in training models to recognize when they're in unfamiliar situations and then behave cautiously if so (e.g., ask for help).
+            </p>
+            <p>
+              I do a mix of theory and empirical work. I aim to design methods that are theoretically grounded and can potentially scale to very advanced AI systems, but which can be tested on (and are useful for) systems we have today.
+            </p>
+<p style="margin-bottom:0;">Some representative projects:</p>
+        <ul>
+          <li>Mitigating goal misgeneralization in video games by asking for help</li>
+          <li>Designing algorithms which provably avoid irreversible costs by asking for help</li>
+          <li>Quantifying the uncertainty signals in the output probabilities of LLMs</li>
+        </ul>
+          </div>
+        </section>
+
+        <!-- Publications Section -->
+<section id="publications">
+  <div class="container">
+    <h2>Publications</h2>
+    <p style="margin-bottom:0;">Lead author: * | Senior author: &dagger;</p>
+
+    <!-- AI Safety Subsection -->
+    <h3>AI Safety</h3>
+    <ol style="margin-bottom:0;">
+      <li>
+        <a href="https://arxiv.org/pdf/2402.08062.pdf" target="_blank">Avoiding Catastrophe in Online Learning by Asking for Help</a><br>
+        <strong>Benjamin Plaut*</strong>, Hanlin Zhu, Stuart Russell&dagger;. 
+        Under submission.
+      </li>
+      <li>
+        <a href="https://arxiv.org/pdf/2402.13213.pdf" target="_blank">Probabilities of Chat LLMs Are Miscalibrated but Still Predict Correctness on Multiple-Choice Q&amp;A</a><br>
+        <strong>Benjamin Plaut*</strong>, Nguyen X. Khanh, Tu Trinh. 
+        Under submission.
+      </li>
+      <li>
+        <a href="https://arxiv.org/pdf/2410.21052" target="_blank">Getting By Goal Misgeneralization With a Little Help From a Mentor</a><br>
+        Tu Trinh*, Mohamad Danesh, Nguyen X. Khanh, <strong>Benjamin Plaut&dagger;</strong>. 
+        NeurIPS 2024 Workshop on Safe and Trustworthy Agents.
+      </li>
+    </ol>
+
+    <!-- Resource Allocation Subsection -->
+    <h3>Resource Allocation</h3>
+    <ol style="margin-bottom:0;">
+      <li>
+        <a href="BenPlautThesisFinal.pdf" target="_blank">Algorithms for Fair Public and Private Resource Allocation</a><br>
+        <strong>Benjamin Plaut</strong>. 
+        PhD dissertation (2021).
+      </li>
+      <li>
+        <a href="https://arxiv.org/pdf/2009.09351.pdf" target="_blank">Counteracting Inequality in Markets via Convex Pricing</a><br>
+        Ashish Goel&dagger;, <strong>Benjamin Plaut*</strong>. 
+        WINE 2020.
+      </li>
+      <li>
+        <a href="https://arxiv.org/pdf/2009.09336.pdf" target="_blank">Almost Envy-free Repeated Matching in Two-sided Markets</a><br>
+        Sreenivas Gollapudi&dagger;, Kostas Kollias, <strong>Benjamin Plaut*</strong>. 
+        WINE 2020.
+      </li>
+      <li>
+        <a href="https://arxiv.org/pdf/1904.03322.pdf" target="_blank">Optimal Nash Equilibria for Bandwidth Allocation</a><br>
+        <strong>Benjamin Plaut*</strong>. 
+        WINE 2020.
+      </li>
+      <li>
+        <a href="equality_of_power.pdf" target="_blank">Equality of Power and Fair Public Decision-making</a><br>
+        Nicole Immorlica&dagger;, <strong>Benjamin Plaut*</strong>, E. Glen Weyl&dagger;. 
+        WINE 2019.
+      </li>
+      <li>
+        <a href="https://arxiv.org/pdf/1807.05293.pdf" target="_blank">Markets Beyond Nash Welfare for Leontief Utilities</a><br>
+        Ashish Goel&dagger;, Reyna Hulett, <strong>Benjamin Plaut*</strong>. 
+        WINE 2019.
+      </li>
+      <li>
+        <a href="https://arxiv.org/pdf/1707.04769.pdf" target="_blank">Communication Complexity of Discrete Fair Division</a><br>
+        <strong>Benjamin Plaut*</strong>, Tim Roughgarden&dagger;. 
+        SODA 2019, SICOMP 2020.
+      </li>
+      <li>
+        <a href="https://arxiv.org/pdf/1807.10836.pdf" target="_blank">Markets for Public Decision-making</a><br>
+        Nikhil Garg, Ashish Goel&dagger;, <strong>Benjamin Plaut*</strong>. 
+        WINE 2018.
+      </li>
+      <li>
+        <a href="https://arxiv.org/pdf/1707.04769.pdf" target="_blank">Almost Envy-Freeness with General Valuations</a><br>
+        <strong>Benjamin Plaut*</strong>, Tim Roughgarden&dagger;. 
+        SODA 2018, SIDMA 2020.
+      </li>
+      <li>
+        <a href="seniorThesis.pdf" target="_blank">Algorithms for Social Good: Kidney Exchange</a><br>
+        <strong>Benjamin Plaut</strong>. 
+        Undergraduate senior thesis, advised by Tuomas Sandholm.
+      </li>
+      <li>
+        <a href="http://arxiv.org/abs/1606.00117" target="_blank">Hardness of the Pricing Problem in Barter Exchanges</a><br>
+        <strong>Benjamin Plaut*</strong>, John P. Dickerson, Tuomas Sandholm&dagger;. 
+        Working paper.
+      </li>
+      <li>
+        <a href="https://arxiv.org/pdf/1606.01623v2.pdf" target="_blank">Position-Indexed Formulations for Kidney Exchange</a><br>
+        John P. Dickerson, David Manlove&dagger;, <strong>Benjamin Plaut</strong>, Tuomas Sandholm&dagger;, and John Trimble*. 
+        EC 2016.
+      </li>
+      <li>
+        <a href="http://jpdickerson.com/pubs/plaut16fast.pdf" target="_blank">Fast Optimal Clearing of Capped-Chain Barter Exchanges</a><br>
+        <strong>Benjamin Plaut*</strong>, John P. Dickerson, Tuomas Sandholm&dagger;. 
+        AAAI 2016.
+      </li>
+    </ol>
+
+    <!-- Miscellaneous Subsection -->
+    <h3>Misc</h3>
+    <ol style="margin-bottom:0;">
+      <li>
+        <a href="http://pubs.acs.org/doi/abs/10.1021/acs.jpcb.6b10362" target="_blank">Direct Observation of Folding Energy Landscape of RNA Hairpin at Mechanical Loading Rates</a><br>
+        Huizhong Xu*, <strong>Benjamin Plaut</strong>, Xiran Zhu, Maverick Chen, Udit Mavinkurve, Anindita Maiti, Guangtao Song, Krishna Murari, and Maumita Mandal&dagger;. 
+        <em>The Journal of Physical Chemistry</em>, 2017.
+      </li>
+    </ol>
+  </div>
+</section>
+
+        <!-- Work Experience Section -->
+        <section id="experience">
+          <div class="container">
+            <h2>Work experience</h2>
+            <div class="experience-item">
+              <span class="job-title">Postdoctoral Researcher</span>
+              <span class="organization">UC Berkeley</span>
+              <span class="timeframe">September 2023 – present</span>
+            </div>
+            <div class="experience-item">
+              <span class="job-title">Data Scientist</span>
+              <span class="organization">Lyft</span>
+              <span class="timeframe">June 2021 – May 2023</span>
+            </div>
+            <div class="experience-item">
+              <span class="job-title">Research Intern</span>
+              <span class="organization">Google</span>
+              <span class="timeframe">June 2020 – November 2020</span>
+            </div>
+            <div class="experience-item">
+              <span class="job-title">Research Intern</span>
+              <span class="organization">Google</span>
+              <span class="timeframe">June 2019 – September 2019</span>
+            </div>
+            <div class="experience-item">
+              <span class="job-title">Teaching Assistant</span>
+              <span class="organization">Stanford University</span>
+              <span class="timeframe">April 2018 – June 2018</span>
+            </div>
+            <div class="experience-item">
+              <span class="job-title">Course Assistant</span>
+              <span class="organization">Carnegie Mellon University</span>
+              <span class="timeframe">January 2014 – December 2015</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Personal Section -->
+        <section id="other">
+          <div class="container">
+            <h2>Other things about me</h2>
+            <ul>
+              <li>
+                I speak English (native) and Spanish (advanced proficiency).
+              </li>
+	      <li>
+		I wrote an algorithmic art-generator called <a href="https://github.com/bplaut/RAMbrandt" target="_blank">RAMbrandt</a> as a personal project in college.
+	      </li>
+              <li>
+                I've composed and produced music. Check out my <a href="https://open.spotify.com/artist/3uPD6HhfJygQOVj9Em030P" target="_blank">Spotify</a>!
+              </li>
+              <li>
+                I've spent a lot of time dancing, especially West Coast Swing, fusion, and ballroom. I was a co-founder and the primary instructor of the <a href="https://www.facebook.com/cardinalswing/" target="_blank">Stanford West Coast Swing Club</a>.
+              </li>
+            </ul>
+            <span class="image main"><img src="ballroom.jpg" alt="Ballroom dancing" /></span>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Footer -->
+      <section id="footer">
+        <div class="container">
+          <ul class="copyright">
+            <li>&copy; Benjamin Plaut. Website last updated February 2025.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/jquery.scrollex.min.js"></script>
+    <script src="assets/jquery.scrolly.min.js"></script>
+    <script src="assets/browser.min.js"></script>
+    <script src="assets/breakpoints.min.js"></script>
+    <script src="assets/util.js"></script>
+    <script src="assets/main.js"></script>
+    <!-- Add this block to force a scroll event after smooth scrolling -->
+    <script>
+      $(document).ready(function() {
+        $('#nav a').off('click').scrolly({
+          speed: 1000,
+          callback: function() {
+            $(window).trigger('scroll');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
