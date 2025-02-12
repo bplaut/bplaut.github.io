@@ -3018,11 +3018,11 @@ input[type="button"]:disabled,
   }
 
   #titleBar .toggle:before {
-    background: #65869e;
+    background: var(--main-color);
     color: #ffffff;
-    content: "Menu";
+    content: "\2630";
     display: block;
-    font-size: 18px;
+    font-size: 25px !important;
     height: 44px;
     line-height: 44px;
     position: absolute;
