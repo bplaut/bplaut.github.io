@@ -93,6 +93,12 @@
         display: block;
         margin: 0 auto;
       }
+      #main > section > .container {
+      /* grow with viewport, but stay readable */
+      width: min(100%, clamp(40rem, 70vw, 64rem));
+      /* preserve the existing side gutter behavior */
+      max-width: calc(100% - 4.5em);
+      }
     </style>
   </head>
   <body class="is-preload">
@@ -248,7 +254,7 @@
         WINE 2019.
       </li>
       <li>
-        <a href="https://arxiv.org/pdf/1707.04769.pdf" target="_blank">Communication Complexity of Discrete Fair Division</a><br>
+        <a href="CC.pdf" target="_blank">Communication Complexity of Discrete Fair Division</a><br>
         <strong>Benjamin Plaut*</strong>, Tim Roughgarden&dagger;. 
         SODA 2019, SICOMP 2020.
       </li>
@@ -258,7 +264,7 @@
         WINE 2018.
       </li>
       <li>
-        <a href="https://arxiv.org/pdf/1707.04769.pdf" target="_blank">Almost Envy-Freeness with General Valuations</a><br>
+        <a href="EFX.pdf" target="_blank">Almost Envy-Freeness with General Valuations</a><br>
         <strong>Benjamin Plaut*</strong>, Tim Roughgarden&dagger;. 
         SODA 2018, SIDMA 2020.
       </li>
