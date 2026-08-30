@@ -108,7 +108,7 @@
       <header>
         <span class="image avatar"><img src="me.jpg" alt="Benjamin Plaut" /></span>
         <h1 id="logo">Benjamin Plaut</h1>
-        <p>Postdoc at UC Berkeley</p>
+        <p>Member of Technical Staff at FAR.AI</p>
 	<p style="margin-top:0;">AI Safety</p>
 	<p style="font-style:normal;font-size:var(--base-font-size);margin-top:0.5em;">
         <a href="mailto:bjplaut@gmail.com">bjplaut@gmail.com</a> | <a href="CV.pdf">CV</a> 
@@ -151,9 +151,9 @@
           <div class="container">
             <h2>About me</h2>
             <p>
-              I am a postdoctoral research fellow at the 
-              <a href="https://humancompatible.ai/">Center for Human-Compatible AI</a> (CHAI) at <a href="https://www.berkeley.edu/">UC Berkeley</a>, where I study AI safety.
-              I am grateful to be mentored by <a href="http://people.eecs.berkeley.edu/~russell/">Stuart Russell</a>.
+              I am a Member of Technical Staff at <a href="https://far.ai">FAR.AI</a>. I was previously a postdoc at the 
+              <a href="https://humancompatible.ai/">Center for Human-Compatible AI</a> (CHAI) at <a href="https://www.berkeley.edu/">UC Berkeley</a>,
+              mentored by <a href="http://people.eecs.berkeley.edu/~russell/">Stuart Russell</a>.
               In 2021, I received my PhD from the 
               <a href="http://www-cs.stanford.edu/">Computer Science Department</a> at 
               <a href="https://www.stanford.edu/">Stanford University</a>, advised by 
@@ -163,43 +163,46 @@
 
 
             <p>
-              I want to use my career to do good in the world. In general, I am interested in ensuring that technology is safe and beneficial.
-              During my PhD, I explored this question from an economic perspective: how to design markets and algorithms that achieve good outcomes even when people are selfish.
-              Over time, I became increasingly concerned at the rapid pace of AI development, causing me to pivot to the field of AI safety. 
-	      I'm concerned about a wide range of risks from AI, including but not limited to serious LLM errors, critical infrastructure failures, 
-	      societal-scale catastrophe, exacerbation of societal inequalities, and economic disruption. (Note that my research doesn't cover all of these.) 
+              I want to use my career to do good in the world. During my PhD, I designed markets and algorithms that achieve fair outcomes even when people are selfish.
+              As AI capabilities advanced, I became increasingly concerned about risks from AI and shifted my research to AI safety.
+				I'm concerned about a wide range of risks from AI, including but not limited to loss of control, facilitating malicious actors (especially for cyberattacks and CBRN attacks),
+	       concentration of power, exacerbation of societal inequalities, and economic disruption. My research is primarily relevant to the first two.
             </p>
             <h3>Research interests</h3>
             <p>
-              Within AI safety, I've mostly studied generalization: how a model handles unfamiliar inputs. I think that many types of safety failures can be framed as misgeneralization.
-              I'm especially interested in training models to recognize when they're in unfamiliar situations and then behave cautiously if so (e.g., ask for help). I've studied this topic
+              My current focus is evaluation awareness: when models recognize that they’re being tested. Current safety assessments rely heavily on behavioral evaluations, 
+				and if models behave differently when they know they’re being tested, these assessments could be systematically misleading. My goal is to determine the extent
+				of this issue and its implications for AI safety. I'm more focused on measuring the impact of eval awareness on behavior, rather than the 
+				prevalence of eval awareness. 
+			</p>
+			<p>
+				My previous work centered on generalization: how a model handles unfamiliar inputs. I think that many types of safety failures can be framed as misgeneralization.
+              I especially focused on training models to recognize when they're in unfamiliar situations and behave cautiously if so (e.g., ask for help). I studied this topic
 			  in the context of LLMs, deep RL in video games, and theory. See this <a href="generalization_and_caution_agenda.pdf">meta-paper</a> for an overview of my generalization work.
-			  Recently, I've also become interested in LLM post-training dynamics and the effects of optimization pressure.
+				I also did some work on optimization pressure in post-training.
             </p>
+		</div>
+	</section>
 
-<p style="margin-bottom:0;">Some representative topics:</p>
-        <ul>		
-		  <li>Interaction of safety and helpfulness post-training in LLM agents (not in the meta-paper)</li>
-          <li>Algorithms which provably avoid irreversible costs by acting cautiously</li>				
-          <li>Using uncertainty quantification in LLMs to guide cautious behavior</li>			
-          <li>Mitigating goal misgeneralization in video games by asking for help</li>
-        </ul>
-          </div>
-        </section>
 
         <!-- Publications Section -->
 <section id="publications">
   <div class="container">
     <h2>Publications</h2>
-    <p style="margin-bottom:0;">Lead author: * | Senior author: &dagger;</p>
+    <p style="margin-bottom:0;">Lead author(s): * | Senior author(s): &dagger;</p>
 
     <!-- AI Safety Subsection -->
     <h3>AI Safety</h3>
     <ol style="margin-bottom:0;">
       <li>
+	<a href="https://arxiv.org/pdf/2502.14043">Safe Learning Under Irreversible Dynamics via Asking for Help</a><br>
+	<strong>Benjamin Plaut*</strong>, Juan Li&eacute;vano-Karim, Hanlin Zhu, Stuart Russell&dagger;. <br>
+	      Journal of Machine Learning Research (JMLR), 2026.
+      </li>				
+      <li>
 	<a href="https://arxiv.org/pdf/2510.14884">Learning When Not to Learn: Risk-Sensitive Abstention in Bandits with Unbounded Rewards</a><br>
 	Sarah Liaw*, <strong>Benjamin Plaut*</strong>. <br>
-	      Annual Conference on Artificial Intelligence and Statistics (AISTATS), 2026.
+	      International Conference on Artificial Intelligence and Statistics (AISTATS), 2026.
       </li>				
       <li>
 	<a href="https://openreview.net/forum?id=YOE0TRK8oU">YRC-Bench: A Benchmark for Learning to Coordinate with Experts</a><br>
@@ -227,15 +230,11 @@
         Neural Information Processing Systems (NeurIPS) 2024 Workshop on Safe and Trustworthy Agents.
       </li>
 	  <li>
-		<a href="https://arxiv.org/pdf/2603.02229">Safety Training Persists Through Helpfulness Optimization in LLM Agents</a><br>
+		<a href="https://arxiv.org/pdf/2603.02229">Safety Training May Persist Through Helpfulness Optimization in LLM Agents</a><br>
 		<strong>Benjamin Plaut</strong>.<br>
-		Under submission.
+		Preprint.
 	  </li>
-      <li>
-	<a href="https://arxiv.org/pdf/2502.14043">Safe Learning Under Irreversible Dynamics via Asking for Help</a><br>
-	<strong>Benjamin Plaut*</strong>, Juan Li&eacute;vano-Karim, Hanlin Zhu, Stuart Russell&dagger;. <br>
-	      Under submission.
-      </li>		
+
     </ol>
 
     <!-- Resource Allocation Subsection -->
@@ -325,9 +324,14 @@
           <div class="container">
             <h2>Work experience</h2>
             <div class="experience-item">
+              <span class="job-title">Member of Technical Staff</span>
+              <span class="organization">FAR.AI</span>
+              <span class="timeframe">August 2026 – present</span>
+            </div>
+            <div class="experience-item">
               <span class="job-title">Postdoctoral Researcher</span>
               <span class="organization">UC Berkeley</span>
-              <span class="timeframe">September 2023 – present</span>
+              <span class="timeframe">September 2023 – August 2026</span>
             </div>
             <div class="experience-item">
               <span class="job-title">Data Scientist</span>
@@ -390,7 +394,7 @@
       <section id="footer">
         <div class="container">
           <ul class="copyright">
-            <li>&copy; Benjamin Plaut. Website last updated Feb 2026.</li>
+            <li>&copy; Benjamin Plaut. Website last updated August 2026.</li>
           </ul>
         </div>
       </section>
